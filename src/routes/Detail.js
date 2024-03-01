@@ -14,7 +14,7 @@ function Detail() {
     ).json();
     // console.log(json);
     setInfo(json.data.movie);
-    // console.log(json.data.movie);
+    //console.log(json.data.movie);
     setLoading(false);
   };
   useEffect(() => {
@@ -30,6 +30,7 @@ function Detail() {
       ) : (
         <div className={styles.movies}>
           <Movie
+            key={info.id}
             id={info.id}
             year={info.year}
             coverImg={info.medium_cover_image}

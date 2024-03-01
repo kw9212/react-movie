@@ -44,3 +44,5 @@ function App() {
     </div>
   );
 }
+
+export default crypto;
